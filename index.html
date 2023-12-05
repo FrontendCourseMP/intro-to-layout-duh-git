@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__container">
       <a href="#"><img src="img/layout/header/superdao-logo.svg" alt="Superdao"></a>
       <button><img src="img/layout/header/burger.svg" alt="Burger"></button>
       <!-- <nav class="header__nav">
@@ -27,25 +26,25 @@
   </header>
   <main>
     <section class="main__hero">
-      <div class="container">
+      <div class="hero__container">
         <h1>The easiest way to start a DAO</h1>
         <p>An all-in-one platform to start, manage and grow a decentralized autonomous organization</p>
         <a href="#">Get started</a>
       </div>
     </section>
     <section class="main__ready-for">
-      <h2>Ready<br>for every project</h2>
-      <ul class="ready-for__link-container">
-        <li><a href="#" class="ready-for__link-container_с1">Investment DAO</a></li>
-        <li><a href="#" class="ready-for__link-container_с2">Startup DAO</a></li>
-        <li><a href="#" class="ready-for__link-container_с3">Service DAO</a></li>
-        <li><a href="#" class="ready-for__link-container_с4">Community DAO</a></li>
-        <li><a href="#" class="ready-for__link-container_с5">Impact DAO</a> </li>
-        <li><a href="#" class="ready-for__link-container_с6">DeFi DAO</a></li>
-        <li><a href="#" class="ready-for__link-container_more"><img src="img/layout/details/more-button_star.svg" alt="+">More</a></li>
+      <h2>Ready <br> for every project</h2>
+      <ul class="ready-for__container">
+        <li><a href="#">Investment DAO</a></li>
+        <li><a href="#">Startup DAO</a></li>
+        <li><a href="#">Service DAO</a></li>
+        <li><a href="#">Community DAO</a></li>
+        <li><a href="#">Impact DAO</a> </li>
+        <li><a href="#">DeFi DAO</a></li>
+        <li><a href="#"><img src="img/layout/details/more-button_star.svg" alt="+">More</a></li>
       </ul>
-      <img class="ready-for__artwork" src="img/grid/1.jpg" alt="Artwork">
-      <a class="ready-for__launched-on-Superdao" href="#">1000+ projects launched on Superdao</a>
+      <img class="ready-for__artwork" src="img/layout/ready-for/artwork.png" alt="Artwork">
+      <a class="ready-for__launched-on" href="#">1000+ projects launched on Superdao</a>
     </section>
     <section class="main__designed-for">
       <h2>Designed<br>for the full journey</h2>
@@ -54,13 +53,13 @@
         <li><h3>Smart contract development</h3></li>
         <li><h3>Fundraising</h3></li>
         <li><h3>Launch marketing</h3></li>
-        <li><h3><span>Member onboarding</span></h3></li>
+        <li><h3>Member onboarding</h3></li>
         <li><h3>Contributor management</h3></li>
         <li><h3>DAO operations</h3></li>
       </ul>
     </section>
     <section class="main__all-tool">
-      <h2>All the tools<br>in one app</h2>
+      <h2>All the tools in one app</h2>
       <ul class="all-tool__container">
         <li><button>NFT membership</button></li>
         <li><button>Member directory</button></li>
@@ -85,26 +84,22 @@
     </section>
     <section class="main__help-at-step">
       <h2>Help at every step</h2>
-      <ul class="help-at-step__people-images">
-        <li><img src="img/layout/help-at-step/gui-1.png" alt="Gui 1"></li>
-        <li><img src="img/layout/help-at-step/gui-2.png" alt="Gui 2"></li>
-        <li><img src="img/layout/help-at-step/gui-3.png" alt="Gui 3"></li>
-        <li><img src="img/layout/help-at-step/gui-4.png" alt="Gui 4"></li>
-        <li><img src="img/layout/help-at-step/gui-5.png" alt="Gui 5"></li>
+      <ul class="help-at-step__img-container">
+        <li><img src="img/layout/help-at-step/gui-1.png" alt="Guy 1"></li>
+        <li><img src="img/layout/help-at-step/gui-2.png" alt="Guy 2"></li>
+        <li><img src="img/layout/help-at-step/gui-3.png" alt="Guy 3"></li>
+        <li><img src="img/layout/help-at-step/gui-4.png" alt="Guy 4"></li>
+        <li><img src="img/layout/help-at-step/gui-5.png" alt="Guy 5"></li>
       </ul>
       <ul class="help-at-step__advantages">
         <li><p>Success managers</p></li>
-        <li><img src="img/layout/details/help-at-step_star-1.svg" alt="Star"></li>
         <li><p>Tutorials</p></li>
         <li><p>Chat support</p></li>
-        <li><img src="img/layout/details/help-at-step_star-2.svg" alt="Star"></li>
         <li><p>Knowledge base</p></li>
         <li><p>Templates</p></li>
-        <li><img src="img/layout/details/help-at-step_star-3.svg" alt="Star"></li>
         <li><p>Events</p></li>
         <li><p>Smart Contract development</p></li>
         <li><p>Education</p></li>
-        <li><img src="img/layout/details/help-at-step_star-4.svg" alt="Star"></li>
         <li><p>Guides</p></li>
       </ul>
     </section>
@@ -118,95 +113,90 @@
         <button type="submit">Subscribe</button>
       </form>
     </section>
-    <section class="main__backed-by">
+    <section class="main__backed-by backed-by">
       <h2>Backed by</h2>
-      <ul>
-        <li><img src="/images/baked-dy-logo/alliance-logo.svg" alt="Alliance"></li>
-        <li><img src="/images/baked-dy-logo/digital-logo.svg" alt="Digital"></li>
-        <li><img src="/images/baked-dy-logo/one-block-logo.svg" alt="One block"></li>
-        <li><img src="/images/baked-dy-logo/fika-logo.svg" alt="Fika"></li>
-        <li><img src="/images/baked-dy-logo/pear-logo.svg" alt="Pear"></li>
-        <li><img src="/images/baked-dy-logo/shima-capital-logo.svg" alt="Shima capital"></li>
-        <li><img src="/images/baked-dy-logo/great-oaks-logo.svg" alt="Great oaks"></li>
-        <li><img src="/images/baked-dy-logo/norwest-logo.svg" alt="Norwest"></li>
-        <li><img src="/images/baked-dy-logo/fifty-years-logo.svg" alt="Fifty years"></li>
-        <li><img src="/images/baked-dy-logo/circle-logo.svg" alt="Circle"></li>
-        <li><img src="/images/baked-dy-logo/protocol-labs-logo.svg" alt="Protocol labs"></li>
-        <li><img src="/images/baked-dy-logo/venturesouo-logo.svg" alt="Venturesouo"></li>
+      <ul class="backed-by__container">
+        <li><img src="img/layout/backed_by/alliance-logo.svg" alt="Alliance"></li>
+        <li><img src="img/layout/backed_by/digital-logo.svg" alt="Digital"></li>
+        <li><img src="img/layout/backed_by/one-block-logo.svg" alt="One block"></li>
+        <li><img src="img/layout/backed_by/fika-logo.svg" alt="Fika"></li>
+        <li><img src="img/layout/backed_by/pear-logo.svg" alt="Pear"></li>
+        <li><img src="img/layout/backed_by/shima-capital-logo.svg" alt="Shima capital"></li>
+        <li><img src="img/layout/backed_by/great-oaks-logo.svg" alt="Great oaks"></li>
+        <li><img src="img/layout/backed_by/norwest-logo.svg" alt="Norwest"></li>
+        <li><img src="img/layout/backed_by/fifty-years-logo.svg" alt="Fifty years"></li>
+        <li><img src="img/layout/backed_by/circle-logo.svg" alt="Circle"></li>
+        <li><img src="img/layout/backed_by/protocol-labs-logo.svg" alt="Protocol labs"></li>
+        <li><img src="img/layout/backed_by/venturesouo-logo.svg" alt="Venturesouo"></li>
       </ul>
     </section>
     <section class="main__press">
       <h2>Press</h2>
-      <a href="#">See all</a>
-      <ul class="press__cards">
+      <ul class="press__card-container">
         <li>
-          <img src="/images/press-companys/decrypt-logo.png" alt="Decrypt">
+          <img src="img/layout/press/decrypt-logo.png" alt="Decrypt">
           <h3>Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform</h3>
           <p>Superdao aims to make it easier for online communities to build and launch DAOs</p>
           <a href="#">Read</a>
         </li>
         <li>
-          <img src="/images/press-companys/blockworks-logo.png" alt="Blockworks">
+          <img src="img/layout/press/blockworks-logo.png" alt="Blockworks">
           <h3>The Y Combinator of Web3 Attracts Record Number of DAO Startups</h3>
           <p>DAOs and related startups made up an “overwhelming number of applicants” for a Web3 accelerator's cohort this year</p>
           <a href="#">Read</a>
         </li>
         <li>
-          <img src="/images/press-companys/techcrunh-logo.png" alt="TechCrunch">
+          <img src="img/layout/press/techcrunh-logo.png" alt="TechCrunch">
           <h3>VC-backed DAO startups are racing to define what DAOs actually are</h3>
           <p>Not all 'decentralized autonomous organizations' are autonomous... or decentralized</p>
           <a href="#">Read</a>
         </li>
       </ul>
-    </section>
-    <section class="main__prodcast">
-      <h2>Podcasts</h2>
       <a href="#">See all</a>
-      <ul class="prodcast__cards">
+    </section>
+    <section class="main__podcast">
+      <h2>Podcasts</h2>
+      <ul class="podcast__card-container">
         <li>
-          <img src="/images/podcast-logo/pomp-podcast-logo.png" alt="The Pomp Podcast">
+          <img src="img/layout/podcasts/pomp-podcast-logo.png" alt="The Pomp Podcast">
           <h3>Understanding DAOs with Yury Lifshits</h3>
           <p>The Pomp Podcast</p>
           <p>by Anthony Pompliano</p>
           <a href="#">Listen</a>
         </li>
         <li>
-          <img src="/images/podcast-logo/unstoppable-podcast-logo.png" alt="The Unstoppable Podcast">
+          <img src="img/layout/podcasts/unstoppable-podcast-logo.png" alt="The Unstoppable Podcast">
           <h3>Everything You Need to Know About DAOs with Yury Lifshits from Superdao</h3>
           <p>The Unstoppable Podcast</p>
           <p>by Josh Gordon</p>
           <a href="#">Watch</a>
         </li>
         <li>
-          <img src="/images/podcast-logo/zima-red-logo.png" alt="Zima Red">
+          <img src="img/layout/podcasts/zima-red-logo.png" alt="Zima Red">
           <h3>Yury Lifshits - Superdao: The “Shopify” for DAOs</h3>
           <p>Zima Red</p>
           <p>by Andrew Stainwold</p>
           <a href="#">Listen</a>
         </li>
       </ul>
+      <a href="#">See all</a>
     </section>
-    
   </main>
   <footer class="footer">
-      <div class="container">
-        <a href="#"><img src="/images/main-logo/superdao-logo.svg" alt="Superdao"></a>
-        <nav class="footer__nav">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Legal</a></li>
-          </ul>
-        </nav>
-        <div class="footer__links">
-          <a href="#"><img src="/images/links-logo/twitter-logo.png" alt="Twitter"></a>
-          <a href="#"><img src="/images/links-logo/telegram-logo.png" alt="Telegram"></a>
-          <a href="#"><img src="/images/links-logo/youtube-logo.png" alt="YouTube"></a>
-          <a href="#"><img src="/images/links-logo/discord-logo.png" alt="Dicsord"></a>
-        </div>
-
+      <div class="footer__container">
+        <a href="#"><img src="img/layout/footer/superdao-logo.svg" alt="Superdao"></a>
+        <ul class="footer__container_nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+        <ul class="footer__container_links">
+          <li><a href="#"><img src="img/layout/footer/twitter-logo.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="img/layout/footer/telegram-logo.png" alt="Telegram"></a></li>
+          <li><a href="#"><img src="img/layout/footer/youtube-logo.png" alt="YouTube"></a></li>
+          <li><a href="#"><img src="img/layout/footer/discord-logo.png" alt="Dicsord"></a></li>
+        </ul>
       </div>
-      <a href="grid.html">GRID</a>
   </footer>
 </body>
 </html>
