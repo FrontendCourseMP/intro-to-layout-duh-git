@@ -1,32 +1,9 @@
-ul {
-  height: 100px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline-start: 0;
-}
-li {
-  list-style: none;
-}
-ul li a {
-  width: 100px;
-
-  display: flex;
-  justify-content: center;
+body {
+  background-color: red;
 }
 
-
-.container {
-  height: 100px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .item {
-  width: 100px;
-
-  display: flex;
-  justify-content: center;
+@media screen and (width < 768px) {
+  body {
+    background-color: aqua;
+  }
 }
