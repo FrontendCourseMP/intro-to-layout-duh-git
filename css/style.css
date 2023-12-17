@@ -857,7 +857,7 @@ h2 {
   }
   .footer__footer-container {
     flex-direction: row;
-    gap: 50px;
+    gap: 50px ;
   }
   .footer-container__more-info-container {
   }

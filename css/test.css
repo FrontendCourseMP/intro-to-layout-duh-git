@@ -1,9 +1,11 @@
-body {
-  background-color: red;
+* {
+  list-style: none;
 }
 
-@media screen and (width < 768px) {
-  body {
-    background-color: aqua;
-  }
+
+.child-container li {
+  list-style-image: url(/intro-to-layout/lemango/img/icon/ul-point.svg);
+}
+.child-container li button {
+  font-weight: normal;
 }
