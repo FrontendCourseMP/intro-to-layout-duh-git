@@ -50,10 +50,9 @@ section {
 
   display: flex;
   flex-direction: column;
-  align-items: start;
 
   min-width: 320px;
-  max-width: 480px;
+  max-width: 70%;
 }
 .green-text {color: var(--color-blue-green-text);}
 .blue-text {color: var(--color-blue);}
@@ -73,7 +72,7 @@ section {
   align-items: center;
 
   min-width: 320px;
-  max-width: 480px;
+  max-width: 70%;
 }
 .header-container__entrance-button {
   margin-left: auto;
@@ -125,17 +124,16 @@ section {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 
   gap: 10px;
-
   width: 100%;
 }
 .service-capabilities__presentation li {
-  width: 100%;
+  width: calc(100% - 44px);
 }
-.service-capabilities__presentation li button {
+.service-capabilities__presentation li summary {
   padding: 20px 22px;
 
   display: flex;
@@ -147,19 +145,19 @@ section {
   font-weight: 500;
   color: var(--color-blue-green-text);
 
+  background-color: var(--background-gray);
   border-radius: var(--radius-segment);
+
+  transition: all 0.2s;
 
   width: 100%;
 }
-
-.presentation__selected-button {
-  display: flex;
-  flex-direction: column;
-}
-.service-capabilities__presentation .presentation__selected-button button {
+.service-capabilities__presentation li details[open] summary {
   color: black;
-
-  border-radius: var(--radius-segment) var(--radius-segment) 0 0;
+  border-radius: var(--radius-segment) var(--radius-segment)  0 0;
+}
+.service-capabilities__presentation li details[open] summary img {
+  transform: rotate(180deg);
 }
 .selected-button__content {
   padding: 28px 20px;
@@ -169,6 +167,8 @@ section {
 
   background-color: var(--background-light-gray);
   border-radius: 0 0 var(--radius-segment) var(--radius-segment);
+
+  width: calc(100% + 4px);
 }
 .content__tool-list {
   margin: 26px 0;
@@ -202,7 +202,7 @@ section {
 
   background: var(--gradient-left-to-right);
   border-radius: var(--radius-button);
-}
+} */
 
 
 .main__ull-be-able h2 {margin-bottom: 20px;}
@@ -215,11 +215,7 @@ section {
 .ull-be-able__possibilities-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
-
-  width: 100%;
 }
 .ull-be-able__possibilities-container li {
   padding: 25px 20px;
@@ -235,7 +231,7 @@ section {
   background: var(--background-gray);
   border-radius: var(--radius-segment);
 
-  width: 92%;
+  width: 100%;
 }
 .main__ull-be-able > img {
   margin: 40px 0 56px;
@@ -248,8 +244,6 @@ section {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 .why-us__advantages-container li {
@@ -555,7 +549,7 @@ section {
   background: var(--background-gray);
 
   min-width: 280px;
-  max-width: 768px;
+  max-width: 100%;
 }
 
 .footer-container__mpassistant-link {
