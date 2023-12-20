@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="mango-style.css">
   <title>LE'mango</title>
 </head>
@@ -17,16 +17,20 @@
     </div>
 
     <div class="header__header-container desctop">
-      <a href="#"><img src="img/mpassistant-logo.svg" alt="Mpassistant"></a>
-      <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и
-        <span class="sapphirine-text">Ozon</span></p>
+      <div class="header-container__logo">
+        <a href="#"><img src="img/mpassistant-logo.svg" alt="Mpassistant"></a>
+        <p>Аналитика и оцифровка продаж <span class="lilac-text">Wildberries</span> и
+          <span class="sapphirine-text">Ozon</span></p>
+      </div>
       <nav class="header-container__nav">
         <a href="#">О нас</a>
         <a href="#">Возможности</a>
         <a href="#">Тарифы</a>
       </nav>
-      <a href="#" class="header-container__entrance-button"><img src="#" alt="Entrance">Вход</a>
-      <a href="#" class="header-container__registration-button">Зарегистрироваться</a>
+      <div class="header-container__entrance">
+        <a href="#" class="entrance__entrance-button"><img src="img/icon/entrance.svg" alt="Entrance">Вход</a>
+        <a href="#" class="entrance__registration-button">Зарегистрироваться</a>
+      </div>
     </div>
 
   </header>
@@ -40,11 +44,11 @@
         <p>Начните свой 3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
         <label for="sub__email_1">
           <input type="email" name="email" id="sub__email_1" placeholder="Введите ваш email">
+          <button type="submit">Попробовать</button>          
         </label>
-        <button type="submit">Попробовать</button>
       </form>
 
-      <img class="desctop" src="#" alt="Corobki">
+      <img class="desctop" src="img/hero/corobki.svg" alt="Corobki">
 
       <ul class="hero__statistic">
         <li>
@@ -64,7 +68,7 @@
     <section class="main__service-capabilities">
       <h2>Возможности сервиса</h2>
 
-      <ul class="service-capabilities__presentation">
+      <ul class="service-capabilities__presentation mobile">
         <li>
           <details open>
             <summary>Финансовая аналитика<img src="img/icon/pop-down.svg" alt="pop-up"></summary>
@@ -104,13 +108,35 @@
         </li>
       </ul>
 
+      <ul class="service-capabilities__presentation desctop">
+        <li class="presentation__selected-button"><p>Финансовая аналитика</p></li>
+        <li><p>Товарная аналитика</p></li>
+        <li><p>Аналитика внутренней рекламы</p></li>
+        <li><p>Статистика</p></li>
+        <li><p>Инструменты</p></li>
+      </ul>
+      <div class="presentation__content desctop">
+        <div class="left-side">
+          <h3>Инструменты для финансовой аналитики</h3>
+          <ul class="content__tool-list">
+            <li><p>Отчёт о прибылях и убытках (P&L)</p></li>
+            <li><p>Отчёт о движении денежных средств (ДДС)</p></li>
+            <li><p>Журнал операций</p></li>
+            <li><p>Сводка продаж</p></li>
+            <li><p>Учёт самовыкупов</p></li>
+          </ul>
+          <a href="#">Попробовать бесплатно</a>
+        </div>
+        <div class="right-side"><img src="img/service-capabilities/report-desctop.png" alt="report"></div>
+      </div>
+
       <form class="lets-start-form">
         <h3>Начните экономить своё время</h3>
         <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
         <label for="sub__email_4">
           <input type="email" name="email" id="sub__email_4" placeholder="Введите ваш email">
+          <button type="submit">Попробовать</button>
         </label>
-        <button type="submit">Попробовать</button>
         <img src="img/service-capabilities/WOMAN-1.png" alt="woman">
       </form>
     </section>
@@ -122,7 +148,8 @@
         <li><img src="img/icon/ul-mark.svg" alt="Mark"><p>Не потратите время на сбор данных из нескольких кабинетов или маркетплейсов</p></li>
         <li><img src="img/icon/ul-mark.svg" alt="Mark"><p>Добавите любое количество магазинов</p></li>
       </ul>
-      <img src="img/ull-be-able/scheme.png" alt="Scheme">
+      <img class="mobile" src="img/ull-be-able/scheme.png" alt="Scheme">
+      <img class="desctop" src="img/ull-be-able/scheme-desctop.png" alt="Scheme">
     </section>
     <section class="main__why-us">
       <h2>Почему выбирают Mpassistant</h2>
@@ -161,8 +188,8 @@
         <p>3-дневный пробный период с неограниченным доступом ко всем возможностям</p>
         <label for="sub__email_2">
           <input type="email" name="email" id="sub__email_2" placeholder="Введите ваш email">
+          <button type="submit">Попробовать</button>   
         </label>
-        <button type="submit">Попробовать</button>
         <img src="img/why-us/WOMAN-2.png" alt="woman">
       </form>
     </section>
@@ -213,7 +240,6 @@
       <h2>Отзывы</h2>
       <ul class="review__review-container">
         <li>
-          <img src="img/icon/quote.svg" alt="Quote">
           <p>Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара. Калькулятор
             полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня бесплатно, так как проходил
             по условиям бесплатного доступа: оборот до 200т.р в месяц. Этого не встретить на других сайтах,
@@ -225,21 +251,23 @@
             </button>
             <h3>— Алексей</h3>
           </div>
+          <img src="img/icon/quote.svg" alt="Quote">
         </li>
         <li class="desctop">
-          <p>Функционал сервиса, тот что есть — полностью устраивает.Хочется ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores cupiditate excepturi natus maiores dolorem repellendus magnam porro adipisci? Nihil possimus minus voluptate eveniet, a provident? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rerum, beatae ratione pariatur minus quae. Mollitia, quam ducimus autem saepe, magnam nostrum consequuntur architecto molestias dicta pariatur debitis quia dolorem? Officiis voluptatum quas fuga.
+            Функционал сервиса, тот что есть — полностью устраивает.Хочется ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!</p>
           <div class="review-container__blur">
             <button>
               <span class="green-text">Читать полностью<img src="img/icon/mark-down.svg" alt="Pointer down"></span>
             </button>
-            <h3>— Алексей</h3>
+            <h3>— Владислав</h3>
           </div>
           <img src="img/icon/quote.svg" alt="Quote">
         </li>
       </ul>
       <ul class="review__switch desctop">
-        <li><button><img src="#" alt="Arrow left"></button></li>
-        <li><button><img src="#" alt="Arrow right"></button></li>
+        <li><button><img src="img/icon/arrow-switch.svg" alt="Arrow left"></button></li>
+        <li><button><img src="img/icon/arrow-switch.svg" alt="Arrow right"></button></li>
       </ul>
       <ul class="review-container__point-container mobile">
         <li><img src="img/icon/point-green.svg" alt="Point"></li>
