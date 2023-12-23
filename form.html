@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <title>Form</title>
+</head>
+<body>
+  <details class="other-work">
+    <summary><h3>Other Work's</h3></summary>
+    <ul class="other-work__link-container">
+      <li><a href="https://duh-layout.netlify.app/grid" target="_blank">Grid</a></li>
+    </ul>
+  </details>
+  <header class="header">
+    <div class="header__container">
+      <a href="#"><img src="img/layout/header/superdao-logo.svg" alt="Superdao"></a>
+      <button class="header__burger-button mobile"><img src="img/layout/header/burger.svg" alt="Menu"></button>
+      <nav class="header__nav desctop">
+        <a href="#">Product</a>
+        <a href="#">Form</a>
+        <a href="#">Use cases</a>
+        <a href="#">Learn</a>
+        <a href="#">About</a>
+        <a href="#">Jobs</a>
+      </nav>
+      <button class="header__login-button desctop">Login</button>
+    </div>
+  </header>
+  <main>
+    <section class="main__form">
+      <h1>Form</h1>
+      <form action="//httpbin.org/post" method="post">
+        <h2>Personal data</h2>
+        <ul class="personal-data container">
+          <li>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Ivan" required>
+          </li>
+
+          <li>
+            <label for="birth">Birthday</label>
+            <input id="birth" name="birth" type="date" required>
+          </li>
+          
+          <li>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+          </li>
+          
+          <li class="sex">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="sex"/>
+  
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="sex"/>
+          </li>
+        </ul>
+        <h2>Contact</h2>
+        <ul class="contact container">
+          <li>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="johnsmith@gmail.com" required>
+          </li>
+          
+          <li>
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="8 (999) 999-99-99" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          </li>
+          
+          <li>
+            <label for="commun-interval">Convenient Time</label>
+            <select id="commun-interval" name="select">
+              <option value="weekdays">Weekdays</option>
+              <option value="weekends">Weekends</option>
+              <option value="everyday">Everyday</option>
+            </select>
+          </li>
+        </ul>
+        <ul class="button-container">
+          <li>
+            <label for="reset"></label>
+            <input id="reset" type="reset"></input>
+          </li>
+          <li>
+            <label for="submit"></label>
+            <input id="submit" type="submit"></input>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__footer-container">
+      <a href="#"><img src="img/layout/footer/superdao-logo.svg" alt="Superdao"></a>
+      <ul class="footer-container__more-info-container">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+      <ul class="footer-container__link-container">
+        <li><a href="#"><img src="img/layout/footer/twitter-logo.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="img/layout/footer/telegram-logo.png" alt="Telegram"></a></li>
+        <li><a href="#"><img src="img/layout/footer/youtube-logo.png" alt="YouTube"></a></li>
+        <li><a href="#"><img src="img/layout/footer/discord-logo.png" alt="Dicsord"></a></li>
+      </ul>
+    </div>
+</footer>
+</body>
+</html>
