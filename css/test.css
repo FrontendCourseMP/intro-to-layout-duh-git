@@ -1,14 +1,93 @@
 * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   box-sizing: border-box;
+}
+body {
+  overflow: hidden;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  border: 10px solid rebeccapurple;
+  background: linear-gradient(90deg, red 0%, black 50%, blue 100%);
 
-  background-color: red;
-  border: 10px solid black;
-
-  width: 500px;
-  height: 150px;
+  width: 100%;
+  height: calc(100vh);
 }
+li {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  animation: roll 4s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    translate: 400%;
+  }
+  100% {
+    translate: -400%;
+  }
+}
+/* .item-1 {
+  animation: roll-1 4s linear infinite;
+}
+.item-2 {
+  animation: roll-2 5s linear infinite;
+}
+.item-3 {
+  animation: roll-3 6s linear infinite;
+}
+.item-4 {
+  animation: roll-4 7s linear infinite;
+}
+.item-2 {
+  animation: infinity-roll 5s linear infinite;  
+}
+.item-3 {
+  animation: infinity-roll 5s linear infinite;
+}
+.item-4 {
+  animation: infinity-roll 5s linear infinite;
+}
+.item-5 {
+  animation: infinity-roll 5s linear infinite;
+}
+.item-6 {
+  animation: infinity-roll 5s linear infinite;
+}
+.item-7 {
+  animation: infinity-roll 5s linear infinite;
+}
+.item-8 {
+  animation: infinity-roll 5s linear infinite;
+} */
+/* @keyframes roll-2 {
+  0% {
+    translate: 400%;
+  }
+  100% {
+    translate: -200%;
+  }
+}
+@keyframes roll-3 {
+  0% {
+    translate: 400%;
+  }
+  100% {
+    translate: -300%;
+  }
+}
+@keyframes roll-4 {
+  0% {
+    translate: 400%;
+  }
+  100% {
+    translate: -400%;
+  }
+} */
