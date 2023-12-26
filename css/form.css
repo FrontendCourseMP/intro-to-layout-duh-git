@@ -2,10 +2,6 @@ section {
   max-width: none;
   justify-content: center;
 }
-body > footer {
-  position: sticky;
-  top: 100vh;
-}
 
 h2 {
   margin-bottom: 30px;

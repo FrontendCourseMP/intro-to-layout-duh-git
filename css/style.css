@@ -142,6 +142,11 @@ body {
   font-family: 'Montserrat', Bahnschrift, 'DIN Alternate', 
   'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif; /* from moderm font stack */
   background-color: var(--bg-black-main);
+  min-height: 100vh;
+}
+footer {
+  position: sticky;
+  top: 100vh;
 }
 section {
   margin: 0 auto 80px;

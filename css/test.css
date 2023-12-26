@@ -5,11 +5,10 @@
   box-sizing: border-box;
 }
 body {
-  position: relative;
   overflow: hidden;
 }
-
-.container {
+ul {
+  position: relative;
   display: flex;
   align-items: center;
   border: 10px solid rebeccapurple;
