@@ -11,11 +11,11 @@
   </details>
   <header class="header">
     <div class="header__container">
-      <a href="https://duh-layout.netlify.app"><img src="img/layout/header/superdao-logo.svg" alt="Superdao"></a>
+      <a href="index.html"><img src="img/layout/header/superdao-logo.svg" alt="Superdao"></a>
       <button class="header__burger-button mobile"><img src="img/layout/header/burger.svg" alt="Menu"></button>
       <nav class="header__nav desctop">
         <a href="#">Product</a>
-        <a href="https://duh-layout.netlify.app/form">Form</a>
+        <a href="form.html">Form</a>
         <a href="#">Use cases</a>
         <a href="#">Learn</a>
         <a href="#">About</a>
@@ -28,60 +28,57 @@
     <section class="main__form">
       <h1>Form</h1>
       <form action="//httpbin.org/post" method="post">
-        <h2>Personal data</h2>
-        <ul class="personal-data container">
-          <li>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Ivan" required>
-          </li>
-
-          <li>
-            <label for="birth">Birthday</label>
-            <input id="birth" name="birth" type="date" required>
-          </li>
-          
-          <li>
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password" required>
-          </li>
-          
-          <li class="sex">
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="sex"/>
-  
-            <label for="female">Female</label>
-            <input type="radio" id="female" name="sex"/>
-          </li>
-        </ul>
-        <h2>Contact</h2>
-        <ul class="contact container">
-          <li>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="johnsmith@gmail.com" required>
-          </li>
-          
-          <li>
-            <label for="phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel" placeholder="8 (999) 999-99-99" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-          </li>
-          
-          <li>
-            <label for="commun-interval">Convenient Time</label>
-            <select id="commun-interval" name="select">
-              <option value="weekdays">Weekdays</option>
-              <option value="weekends">Weekends</option>
-              <option value="everyday">Everyday</option>
-            </select>
-          </li>
-        </ul>
+        <fieldset>
+          <legend><h2>Personal data</h2></legend>
+          <ul class="container">
+            <li>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Ivan" required>
+            </li>
+            <li>
+              <label for="birth">Birthday</label>
+              <input id="birth" name="birth" type="date" required>
+            </li>
+            <li>
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Password" required>
+            </li>
+            <li class="gender">
+              <label for="male">Male</label>
+              <input id="male" type="radio" name="gender"/>
+              <label for="female">Female</label>
+              <input id="female" type="radio" name="gender"/>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend><h2>Contact</h2></legend>
+          <ul class="container">
+            <li>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="ivanovivan@mail.ru" required>
+            </li>
+            <li>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="8 (999) 999-99-99" pattern="[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+            </li>
+            <li>
+              <label for="time-of-day">Time</label>
+              <select id="time-of-day" name="time-of-day">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+                <option value="night">Night</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
         <ul class="button-container">
           <li>
-            <label for="reset"></label>
-            <input id="reset" type="reset"></input>
+            <button type="reset">Reset</button>
           </li>
           <li>
-            <label for="submit"></label>
-            <input id="submit" type="submit"></input>
+            <button type="submit">Submit</button>
           </li>
         </ul>
       </form>
