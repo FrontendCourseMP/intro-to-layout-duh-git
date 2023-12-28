@@ -89,53 +89,7 @@
 }
 ::selection {
   background: var(--bg-orange);
-}
-
-.other-work {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  z-index: 100;
-}
-.other-work summary {
-  position: relative;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  transition: all .3s;
-  border: var(--bg-black-main) solid 1px;
-  background-color: var(--bg-black-element);
-}
-details[open] summary {
-  border-radius: 0 0 10px 10px;
-}
-.other-work summary:hover {
-  background-color: var(--bg-orange);
-}
-.other-work summary:hover h3 {
   color: black;
-}
-.other-work__link-container {
-  position: absolute;
-  bottom: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-  background-color: var(--bg-gray-element);
-  border-radius: 10px 10px 0 0;
-  width: 100%;
-}
-.other-work__link-container li {
-  padding: 6px 0;
-  text-align: center;
-  transition: all .3s;
-}
-.other-work__link-container li:hover {
-  background-color: var(--bg-orange);
-}
-.other-work__link-container a {
-  font-size: 1.4rem;
 }
 
 body {
@@ -1186,4 +1140,57 @@ h2::before {
     width: 60px;
     height: 60px;
   }
+}
+
+
+
+
+.other-work {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 100;
+}
+.other-work summary {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: all .15s;
+  border: var(--bg-black-main) solid 1px;
+  background-color: var(--bg-black-element);
+}
+details[open] summary {
+  border-radius: 0 0 10px 10px;
+}
+.other-work summary:hover {
+  background-color: var(--bg-orange);
+}
+.other-work summary:hover h3 {
+  color: black;
+}
+.other-work__link-container {
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  background-color: var(--bg-gray-element);
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.other-work__link-container li {
+  padding: 6px 0;
+  text-align: center;
+}
+.other-work__link-container a {
+  font-size: 1.4rem;
+  font-weight: 600;
+ }
+.other-work__link-container li:hover {
+  background-color: var(--bg-orange);
+}
+.other-work__link-container li:hover a {
+  color: black;
 }
